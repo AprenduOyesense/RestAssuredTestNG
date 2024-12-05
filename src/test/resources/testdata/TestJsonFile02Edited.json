@@ -1,9 +1,0 @@
-{
-   "name": "Bob",
-   "department": {
-      "position": {
-         "role": "lead",
-         "years": 3
-      }
-   }
-}
