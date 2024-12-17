@@ -71,8 +71,7 @@ public class TestListener implements ITestListener {
             String subid = subIdObj.toString();
             if (!subid.isEmpty()) {
                 LogUtils.info("SubId for test case " + result.getName() + ": " + subid);
-                // Add subid to the report
-                // ExtentReportManager.addTestDetails("SubId: " + subid); // Uncomment if using Extent Reports
+                
             }
         }
     }
