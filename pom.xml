@@ -125,9 +125,12 @@
                     <configuration>
                         <suiteXmlFiles>
                             <!-- Call Suite name -->
-                            <suiteXmlFile>suites/SuiteAllureReport.xml</suiteXmlFile>
-                            <suiteXmlFile>suites/SuiteRunAnnotation.xml</suiteXmlFile>
+                            <suiteXmlFile>suites/SuiteAll.xml</suiteXmlFile>
                         </suiteXmlFiles>
+                        <listeners>
+                        <!-- Add the listener class for the custom JUnit reporter -->
+                            <listener class-name="com.oyetest.reports.CustomJUnitReporter"/>
+                        </listeners>
                         <argLine>
                             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.22.1/aspectjweaver-1.9.22.1.jar"
                         </argLine>
