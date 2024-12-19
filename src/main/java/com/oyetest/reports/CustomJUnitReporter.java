@@ -109,7 +109,7 @@ public class CustomJUnitReporter implements IReporter {
                 buffer.push("failure",
                     "message", result.getThrowable().getMessage(),
                     "type", result.getThrowable().getClass().getSimpleName());
-                    buffer.addString(result.getThrowable().getMessage());
+                    buffer.addCDATA(result.getThrowable().getMessage());
                 buffer.pop("failure");
             } else if ("skipped".equals(status)) {
                 // For skipped test cases, add <skipped> tag
